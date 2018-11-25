@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PC at Home</string>
+    <string name="connect">连接设备</string>
+    <string name="check">查看PC</string>
+    <string name="history">历史记录</string>
+    <string name="help">帮助</string>
+    <string name="turnoff">远程关机</string>
+    <string name="settime">定时关机</string>
+    <string name="monitor">摄像头</string>
+    <string name="warning">提示</string>
+    <string name="new_appliance">添加新设备</string>
+    <string name="info">关于PC at Home</string>
+    <drawable name="clr_normal">#00000000</drawable>
+    <drawable name="clr_pressed">#64d2fb</drawable>
+
+</resources>

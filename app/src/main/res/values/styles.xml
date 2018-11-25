@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bluegreen</item>
+        <item name="colorPrimaryDark">@color/bluegreen</item>
+        <item name="colorAccent">@color/mintgreen2</item>
+
+    </style>
+    <!-- 宽 match——parent 高  wrap_content-->
+    <style name="h_wrap_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <!-- 宽高都 match——parent -->
+    <style name="tv_style">
+        <item name="android:layout_width">145dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@color/ricewhite</item>
+    </style>
+<style name="set_bg_color">
+    <item name="android:background">@color/ricewhite</item></style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

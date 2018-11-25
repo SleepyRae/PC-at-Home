@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TurnoffActivity">
+
+    <RelativeLayout
+            style="@style/h_wrap_content"
+            android:layout_gravity="top"
+            app:layout_heightPercent="50%"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+            app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_computer2"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            style="@style/h_wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_heightPercent="50%"
+            tools:layout_editor_absoluteX="0dp"
+            android:id="@+id/relativeLayout3"
+            android:layout_marginBottom="72dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+                style="@style/tv_style"
+                android:id="@+id/turnoff_textview"
+                android:drawableTop="@drawable/ic_turnoff"
+                android:clickable="true"
+                android:text="@string/turnoff"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
+
+        <TextView
+                style="@style/tv_style"
+                android:id="@+id/settime_textview"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:drawableTop="@drawable/ic_time1"
+                android:clickable="true"
+                android:text="@string/settime"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

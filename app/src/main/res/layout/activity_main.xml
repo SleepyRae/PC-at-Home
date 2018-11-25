@@ -1,0 +1,58 @@
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ricewhite"
+    tools:context=".MainActivity">
+
+    <RelativeLayout style="@style/h_wrap_content"
+        android:layout_gravity="top"
+        app:layout_heightPercent="50%">
+        <TextView
+            style="@style/tv_style"
+            android:id="@+id/connect_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:drawableTop="@drawable/ic_pc"
+            android:clickable="true"
+            android:text="@string/connect" />
+        <TextView
+            style="@style/tv_style"
+            android:id="@+id/check_textview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="40dp"
+            android:drawableTop="@drawable/connect_icon"
+            android:clickable="true"
+            android:text="@string/check" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/h_wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_heightPercent="50%">
+         <TextView
+             style="@style/tv_style"
+             android:id="@+id/history_textview"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="40dp"
+             android:drawableTop="@drawable/history_icon"
+             android:clickable="true"
+             android:text="@string/history" />
+        <TextView
+            style="@style/tv_style"
+            android:id="@+id/help_textview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:drawableTop="@drawable/help_icon"
+            android:clickable="true"
+            android:text="@string/help" />
+    </RelativeLayout>
+    </android.support.percent.PercentFrameLayout>
