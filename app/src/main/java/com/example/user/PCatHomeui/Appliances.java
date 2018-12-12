@@ -1,4 +1,4 @@
-package com.example.user.smarthomeui;
+package com.example.user.PCatHomeui;
 
 /**
  * Created by Inspiron on 2018/5/28.

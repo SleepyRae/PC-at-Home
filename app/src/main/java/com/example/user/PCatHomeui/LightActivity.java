@@ -1,4 +1,4 @@
-package com.example.user.smarthomeui;
+package com.example.user.PCatHomeui;
 
 import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package com.example.user.smarthomeui;
+package com.example.user.PCatHomeui;
 
 import org.junit.Test;
 

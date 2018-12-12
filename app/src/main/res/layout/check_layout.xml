@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.user.smarthomeui.CheckActivity"
+    tools:context="com.example.user.PCatHomeui.CheckActivity"
     android:minHeight="200dp"
     android:background="@color/ricewhite">
     <TextView

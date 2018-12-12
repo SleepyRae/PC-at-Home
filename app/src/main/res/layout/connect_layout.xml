@@ -8,17 +8,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.smarthomeui.ConnectActivity">
+    tools:context="com.example.user.PCatHomeui.ConnectActivity">
 
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="未发现新设备"
-            android:textSize="18sp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在扫描中......"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="222dp"/>
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="229dp"/>
+
+
 
 
 

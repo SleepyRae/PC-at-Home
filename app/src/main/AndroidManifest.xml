@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.user.smarthomeui">
+          package="com.example.user.PCatHomeui">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -9,7 +10,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.user.PCatHomeui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,29 +18,29 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".LightActivity"
+                android:name="com.example.user.PCatHomeui.LightActivity"
                 android:launchMode="singleInstance"/>
         <activity
-                android:name=".CheckActivity"
+                android:name="com.example.user.PCatHomeui.CheckActivity"
                 android:label="@string/check"/>
         <activity
-                android:name=".HelpActivity"
+                android:name="com.example.user.PCatHomeui.HelpActivity"
                 android:label="@string/help"/>
         <activity
-                android:name=".CameraActivity"
+                android:name="com.example.user.PCatHomeui.CameraActivity"
                 android:label="@string/monitor"
                 android:launchMode="singleInstance"/>
         <activity
-                android:name=".WarningActivity"
+                android:name="com.example.user.PCatHomeui.WarningActivity"
                 android:label="@string/warning"/>
         <activity
-                android:name=".ConnectActivity"
+                android:name="com.example.user.PCatHomeui.ConnectActivity"
                 android:label="@string/connect"/>
         <activity
-                android:name=".HistoryActivity"
+                android:name="com.example.user.PCatHomeui.HistoryActivity"
                 android:label="@string/history"/>
         <activity
-                android:name=".InfoActivity"
+                android:name="com.example.user.PCatHomeui.InfoActivity"
                 android:label="@string/info">
         </activity>
 
@@ -52,10 +53,14 @@
                 android:value="@integer/google_play_services_version"/>
 
         <activity
-                android:name=".TurnoffActivity"
+                android:name="com.example.user.PCatHomeui.TurnoffActivity"
                 android:label="@string/turnoff">
         </activity>
-        <activity android:name=".SettimeActivity">
+        <activity android:name="com.example.user.PCatHomeui.SettimeActivity">
+        </activity>
+        <activity android:name="com.example.user.PCatHomeui.ReConnectActivity">
+        </activity>
+        <activity android:name="com.example.user.PCatHomeui.ShutdownActivity">
         </activity>
     </application>
 

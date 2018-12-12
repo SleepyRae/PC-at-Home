@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ricewhite"
-    tools:context="com.example.user.smarthomeui.WarningActivity">
+    tools:context="com.example.user.PCatHomeui.WarningActivity">
 
     <ImageView
         android:id="@+id/imageView2"

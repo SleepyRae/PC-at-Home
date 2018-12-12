@@ -1,4 +1,4 @@
-package com.example.user.smarthomeui;
+package com.example.user.PCatHomeui;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
