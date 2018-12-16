@@ -6,6 +6,7 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
 public class MyWifiManager {
+
     private WifiManager wifiManager;
     private WifiInfo wifiInfo;
     private DhcpInfo dhcpInfo;

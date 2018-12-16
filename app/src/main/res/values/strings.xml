@@ -11,6 +11,9 @@
     <string name="warning">提示</string>
     <string name="new_appliance">添加新设备</string>
     <string name="info">关于PC at Home</string>
+    <string name="cameramonitor">监控中</string>
+    <string name="addIP">连接</string>
+    <string name="cameraOn">开启</string>
     <drawable name="clr_normal">#00000000</drawable>
     <drawable name="clr_pressed">#64d2fb</drawable>
 

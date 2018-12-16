@@ -13,8 +13,8 @@ public class ReConnectActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_LEFT_ICON);
         setContentView(R.layout.reconnect_layout);
-//        getWindow().requestFeature(Window.FEATURE_LEFT_ICON);
 
         btn_rescan = (Button) findViewById(R.id.btnReScan);
         btn_close = (Button) findViewById(R.id.btnClose);
@@ -27,7 +27,7 @@ public class ReConnectActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnReScan:
-                Intent intent = new Intent(ReConnectActivity.this, ConnectActivity.class);
+                Intent intent = new Intent(ReConnectActivity.this, ScanActivity.class);
                 startActivity(intent);
                 finish();
                 break;

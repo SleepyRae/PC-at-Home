@@ -21,7 +21,7 @@ public class TurnoffActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId( )) {
             case R.id.turnoff_textview:
-                Intent turnoff_intent = new Intent(TurnoffActivity.this, ConnectActivity.class);
+                Intent turnoff_intent = new Intent(TurnoffActivity.this, ScanActivity.class);
                 startActivity(turnoff_intent);
                 break;
             case R.id.settime_textview:

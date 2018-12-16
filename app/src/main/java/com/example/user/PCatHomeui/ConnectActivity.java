@@ -6,7 +6,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -16,10 +19,13 @@ import java.net.Socket;
 
 public class ConnectActivity extends AppCompatActivity{
 
-    private MyWifiManager myWifiManager = null;
+    /*private MyWifiManager myWifiManager = null;
     private String serverIP = "", resultIP = "";
     private ScanIPThread scanThread = null;
-    private ProgressBar progressBar;
+    private ProgressBar progressBar;*/
+
+    private Button button = null;
+    private EditText editText = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,24 +37,37 @@ public class ConnectActivity extends AppCompatActivity{
                 .getWidth();*/
         setContentView(R.layout.connect_layout);
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        button = (Button) findViewById(R.id.button);
+        editText = (EditText) findViewById(R.id.editText);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String ipAddr = editText.getText().toString();
+                MyApplication app = (MyApplication) getApplication();
+                app.setIpAddr(ipAddr);
+                Intent backToMain = new Intent(ConnectActivity.this, MainActivity.class);
+                startActivity(backToMain);
+            }
+        });
+
+       /* progressBar = (ProgressBar) findViewById(R.id.progressBar);
         myWifiManager = new MyWifiManager(ConnectActivity.this);
         scanThread = new ScanIPThread();
-        scanThread.start();
+        scanThread.start();*/
     }
 
-    @SuppressLint("HandlerLeak")
+   /* @SuppressLint("HandlerLeak")
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
                 case 1000:
-                    Toast.makeText(ConnectActivity.this, "找到可连接PC",
-                            Toast.LENGTH_SHORT).show(); // 找到可连接PC
-                    Intent shutdownIntent = new Intent(ConnectActivity.this, ShutdownActivity.class);
+                    Toast.makeText(ConnectActivity.this, "找到可连接PC", Toast.LENGTH_SHORT).show(); // 找到可连接PC
+                    Intent controlIntent = new Intent(ConnectActivity.this, ReConnectActivity.class);
                     // 将可以连接的ip发过去
-                    shutdownIntent.putExtra("ip", (String) msg.obj);
-                    startActivity(shutdownIntent);
+                    controlIntent.putExtra("ip", (String) msg.obj);
+                    startActivity(controlIntent);
                     finish();
                     break;
                 case 2000:
@@ -98,5 +117,5 @@ public class ConnectActivity extends AppCompatActivity{
             }
             super.run();
         }
-    }
+    }*/
 }
