@@ -29,7 +29,7 @@ public class CheckActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Appliances appliances = appliancesList.get(position);
-                Toast.makeText(CheckActivity.this, appliances.getName()+"连接中......", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CheckActivity.this, "PC连接中......", Toast.LENGTH_SHORT).show();
                 switch (appliances.getName()){
                     case "远程关机":
                         Intent turnoff_intent = new Intent(CheckActivity.this,TurnoffActivity.class);

@@ -14,6 +14,10 @@
     <string name="cameramonitor">监控中</string>
     <string name="addIP">连接</string>
     <string name="cameraOn">开启</string>
+    <string name="usingInfo">使用情况</string>
+    <string name="reconnect">重新连接</string>
+    <string name="scan">查找PC</string>
+    <string name="defaultusinginfo">暂无使用情况</string>
     <drawable name="clr_normal">#00000000</drawable>
     <drawable name="clr_pressed">#64d2fb</drawable>
 
