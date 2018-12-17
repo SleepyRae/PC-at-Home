@@ -14,8 +14,7 @@ public class ShutDownServer {
 
 	public static void main(String[] args) {
 		try {
-			// ¼àÌý30
-			// 000¶Ë¿Ú
+			// ¼àÌý30000¶Ë¿Ú
 			serverSocket = new ServerSocket(30000);
 			System.out.println("ShutDownServer is listening  port 30000............");
 
