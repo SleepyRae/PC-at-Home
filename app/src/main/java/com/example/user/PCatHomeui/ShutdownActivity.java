@@ -48,8 +48,8 @@ public class ShutdownActivity extends AppCompatActivity implements View.OnClickL
         btn_cancel = (Button) findViewById(R.id.btnCancel);
         btn_close = (Button) findViewById(R.id.btnClose);
 
-        /*Intent intent = getIntent();
-        connIP = intent.getStringExtra("ip");*/
+        Intent intent = getIntent();
+        connIP = intent.getStringExtra("ip");
 
         btn_shutdown.setOnClickListener(this);
         btn_restart.setOnClickListener(this);
@@ -63,30 +63,31 @@ public class ShutdownActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.btnShutdown:
                 final String shutdown = "shutdown";
-                /*if (connThread != null) {
+                if (connThread != null) {
                     connThread.interrupt();
                 }
                 connThread = new ConnThread(connIP, 30000, shutdown);
-                connThread.start();*/
+                connThread.start();
                 break;
             case R.id.btnReboot:
                 final String reboot = "reboot";
-                /*if (connThread != null) {
+                if (connThread != null) {
                     connThread.interrupt();
                 }
                 connThread = new ConnThread(connIP, 30000, reboot);
-                connThread.start();*/
+                connThread.start();
                 break;
             case R.id.btnCancel:
                 final String cancel = "cancel";
-               /* if (connThread != null) {
+                if (connThread != null) {
                     connThread.interrupt();
                 }
                 connThread = new ConnThread(connIP, 30000, cancel);
-                connThread.start();*/
+                connThread.start();
                 break;
             case R.id.btnClose:
-                finish();
+                Intent controlIntent = new Intent(ShutdownActivity.this, TurnoffActivity.class);
+                startActivity(controlIntent);
                 break;
             default:
                 break;
