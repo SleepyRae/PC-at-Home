@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CheckActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private List<Appliances> appliancesList = new ArrayList<>();
+    private List<Appliances> appliancesList = new ArrayList<Appliances>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +44,8 @@ public class CheckActivity extends AppCompatActivity implements View.OnClickList
                         startActivity(monitor_intent);
                         break;
                     case "使用情况":
-                        Intent info_intent = new Intent(CheckActivity.this,UsingInfoActivity.class);
-                        startActivity(info_intent);
+                       // Intent microphone_intent = new Intent(CheckActivity.this,MicrophoneActivity.class);
+                      //  startActivity(microphone_intent);
                         break;
                 }
 

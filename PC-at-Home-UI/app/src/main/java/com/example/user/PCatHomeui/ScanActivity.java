@@ -44,7 +44,7 @@ public class ScanActivity extends AppCompatActivity {
             switch (msg.what) {
                 case 1000:
                     Toast.makeText(ScanActivity.this, "找到可连接PC", Toast.LENGTH_SHORT).show(); // 找到可连接PC
-                    Intent controlIntent = new Intent(ScanActivity.this, ShutdownActivity.class);
+                    Intent controlIntent = new Intent(ScanActivity.this, ReConnectActivity.class);
                     // 将可以连接的ip发过去
                     controlIntent.putExtra("ip", (String) msg.obj);
                     startActivity(controlIntent);
